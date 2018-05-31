@@ -1,0 +1,10 @@
+{
+  "env": {
+    "commonjs": true
+  },
+  "extends": ["airbnb-base"],
+  "rules": {
+    "no-console": "off",
+    "no-plusplus": "off"
+  }
+}
