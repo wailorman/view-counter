@@ -21,7 +21,7 @@
     "nodemon": "^1.17.5"
   },
   "scripts": {
-    "build": "node scripts/build-for.js",
+    "build": "./node_modules/.bin/babel src --out-dir lib",
     "start": "nodemon src/index.js --exec babel-node"
   }
 }
