@@ -7,4 +7,5 @@ yarn-error.log*
 .npm
 .DS_Store
 
-dist/
+lib/
+.tmp/
