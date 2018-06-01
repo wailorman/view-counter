@@ -1,4 +1,4 @@
-export const template = ({ counter, version }) => `
+export const template = ({ counter, version, nodeVersion }) => `
     <style>
       .container {
         text-align: center;
@@ -19,6 +19,7 @@ export const template = ({ counter, version }) => `
         padding-top: 50px;
         font-family: monospace;
         font-size: 0.5em;
+        text-align: left;
       }
 
       .number-mark {
@@ -34,7 +35,8 @@ export const template = ({ counter, version }) => `
       </div>
       for the last minute.
       <div class="version">
-        version: ${version}
+        package version: ${version} <br/>
+        node version: ${nodeVersion}
       </div>
     </div>
   `;

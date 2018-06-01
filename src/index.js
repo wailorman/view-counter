@@ -13,7 +13,7 @@ let counter = 0;
 
 router.get('/', (ctx) => {
   counter++;
-  ctx.body = template({ counter, version });
+  ctx.body = template({ counter, version, nodeVersion: process.version });
   setTimeout(() => {
     counter--;
   }, 60 * 1000);
