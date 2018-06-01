@@ -5,6 +5,7 @@
   "repository": "https://github.com/wailorman/view-counter.git",
   "author": "Sergey Popov <wailorman@gmail.com>",
   "license": "MIT",
+  "description": "",
   "dependencies": {
     "koa": "^2.5.1",
     "koa-router": "^7.4.0"
