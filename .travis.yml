@@ -30,3 +30,7 @@ script:
   - gcloud docker -- push gcr.io/views-counter-206010/views-counter:latest
   - gcloud docker -- push "gcr.io/views-counter-206010/views-counter:$TRAVIS_COMMIT"
   - kubectl set image deployment/views-counter views-counter="gcr.io/views-counter-206010/views-counter:$TRAVIS_COMMIT"
+
+branches:
+  only:
+    - master
