@@ -1,28 +1,28 @@
 version: '3'
 services:
   views-counter-6:
-    image: "wailorman/views-counter:6"
+    image: "views-counter:6"
     build:
       dockerfile: "dockerfiles/Dockerfile.6"
       context: .
     ports:
       - "3006:3000"
   views-counter-7:
-    image: "wailorman/views-counter:7"
+    image: "views-counter:7"
     build:
       dockerfile: "dockerfiles/Dockerfile.7"
       context: .
     ports:
       - "3007:3000"
   views-counter-8:
-    image: "wailorman/views-counter:8"
+    image: "views-counter:8"
     build:
       dockerfile: "dockerfiles/Dockerfile.8"
       context: .
     ports:
       - "3008:3000"
   views-counter-latest:
-    image: "wailorman/views-counter:latest"
+    image: "views-counter:latest"
     build:
       dockerfile: "Dockerfile"
       context: .
