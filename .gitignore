@@ -9,3 +9,5 @@ yarn-error.log*
 
 lib/
 .tmp/
+
+gce-credentials.json
