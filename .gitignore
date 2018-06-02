@@ -11,3 +11,5 @@ lib/
 .tmp/
 
 gce-credentials.json
+kube-config.yml
+secrets.tar
