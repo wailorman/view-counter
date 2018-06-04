@@ -4,6 +4,7 @@ services:
 cache:
   directories:
   - "$HOME/google-cloud-sdk/"
+  - node_modules
 env:
   - GAE_PYTHONPATH=${HOME}/.cache/google_appengine PATH=$PATH:${HOME}/google-cloud-sdk/bin PYTHONPATH=${PYTHONPATH}:${GAE_PYTHONPATH} CLOUDSDK_CORE_DISABLE_PROMPTS=1
 
@@ -25,6 +26,8 @@ before_install:
 install: true
 
 script:
+  - npm install
+  - npm run lint
   - docker image build -t gcr.io/views-counter-206010/views-counter:latest -f dockerfiles/Dockerfile.6 .
   - docker image tag gcr.io/views-counter-206010/views-counter:latest "gcr.io/views-counter-206010/views-counter:$TRAVIS_COMMIT"
   - gcloud docker -- push gcr.io/views-counter-206010/views-counter:latest
