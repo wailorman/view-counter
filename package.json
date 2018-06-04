@@ -23,6 +23,7 @@
   },
   "scripts": {
     "build": "./node_modules/.bin/babel src --out-dir lib",
-    "start": "nodemon src/index.js --exec babel-node"
+    "start": "nodemon src/index.js --exec babel-node",
+    "lint": "./node_modules/.bin/eslint ./src"
   }
 }
