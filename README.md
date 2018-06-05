@@ -5,7 +5,7 @@
 This is an example application of building Node.js project for multiple node 
 versions at once, dockerizing & deploying it on kubernetes cluster
 
-[Live demo](http://35.195.254.204/) (may not work)
+[Live demo](http://35.233.90.24/) (may not work)
 
 ## Getting started
 
@@ -72,7 +72,7 @@ Now you can access multiple version of app by visiting
 ## Kubernetes
 
 1. Set up your cluster (i.e. on [Google Cloud](https://cloud.google.com/kubernetes-engine/docs/quickstart))
-2. Open `.kube/deployment.yaml` file & update `image: ...` to your ones
-3. Run `kubectl create -f ./.kube/`
-4. Wait until service receive external ip by checking `kubectl get service views-counter`
+2. Open `.kube/app-deploy.yaml` file & update `image: ...` to your ones
+3. Run `kubectl create -f .kube/`
+4. Wait until service receive external ip by checking `kubectl get service vc-app`
 5. Visit `http://[EXTERNAL_IP]`
