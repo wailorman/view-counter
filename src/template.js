@@ -1,4 +1,6 @@
-export const template = ({ counter, version, nodeVersion }) => `
+export const template = ({
+  counterValue, version, nodeVersion, proccessId,
+}) => `
     <style>
       .container {
         text-align: center;
@@ -30,13 +32,14 @@ export const template = ({ counter, version, nodeVersion }) => `
       You are the visitor
       <div class="counter">
         <span class="counter-number">
-          <span class="number-mark">#</span>${counter}
+          <span class="number-mark">#</span>${counterValue}
         </span>
       </div>
       for the last minute.
       <div class="version">
         package version: ${version} <br/>
-        node version: ${nodeVersion}
+        node version: ${nodeVersion} <br />
+        process id: ${proccessId}
       </div>
     </div>
   `;

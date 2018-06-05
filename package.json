@@ -7,8 +7,10 @@
   "license": "MIT",
   "description": "",
   "dependencies": {
+    "bluebird": "^3.5.1",
     "koa": "^2.5.1",
-    "koa-router": "^7.4.0"
+    "koa-router": "^7.4.0",
+    "redis": "^2.8.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.49",
