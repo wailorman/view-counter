@@ -1,5 +1,6 @@
 import Koa from 'koa';
 import Router from 'koa-router';
+import os from 'os';
 
 import { version } from '../package.json';
 import { template } from './template';
@@ -18,7 +19,7 @@ router.get('/', async (ctx) => {
     counterValue,
     version,
     nodeVersion: process.version,
-    proccessId: process.pid,
+    host: os.hostname(),
   });
 });
 

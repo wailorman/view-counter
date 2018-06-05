@@ -1,5 +1,5 @@
 export const template = ({
-  counterValue, version, nodeVersion, proccessId,
+  counterValue, version, nodeVersion, host,
 }) => `
     <style>
       .container {
@@ -39,7 +39,7 @@ export const template = ({
       <div class="version">
         package version: ${version} <br/>
         node version: ${nodeVersion} <br />
-        process id: ${proccessId}
+        host: ${host}
       </div>
     </div>
   `;
